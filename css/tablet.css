@@ -103,10 +103,9 @@
 
   .address .contacts {
     font-weight: 400;
-    font-size: 16px;
+    font-size: 12px;
     line-height: 1.5;
     letter-spacing: 0.02em;
-    color: #434455;
     color: #434455;
   }
   /* Hover durumunda */
@@ -119,7 +118,7 @@
     .hero-page {
       position: relative;
       width: 768px;
-      height: 436px;
+
       background-image: url("../images/people-office-2x.jpg");
     }
   }
@@ -173,15 +172,18 @@
   .section-features {
     width: 768px;
     height: 504px;
-    margin-top: 96px 6px;
+    padding: 96px 16px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 72px;
+    margin: 0;
   }
 
   .features-list-ul {
+    width: 736px;
+    height: 350px;
     display: flex;
     flex-wrap: wrap;
     gap: 24px;

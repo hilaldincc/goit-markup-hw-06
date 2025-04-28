@@ -223,7 +223,6 @@ textarea {
   background-repeat: no-repeat;
   background-position: center;
   height: 432px;
-
   position: relative;
   z-index: 2;
 }
@@ -238,6 +237,8 @@ textarea {
   padding: 16px 32px;
   width: 169px;
   height: 56px;
+  border: none;
+  cursor: pointer;
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   background: #4d5ae5;
 }
@@ -273,6 +274,7 @@ textarea {
   flex-direction: row;
   gap: 10px;
   border-radius: 4px;
+
   padding: 16px 32px;
   width: 169px;
   height: 56px;
@@ -297,7 +299,7 @@ textarea {
   flex-direction: column;
   gap: 72px;
   width: 320px;
-  height: 696px;
+
   margin-top: 96px;
 }
 
@@ -336,11 +338,13 @@ textarea {
   letter-spacing: 0.02em;
   color: #434455;
   text-align: flex-start;
+  padding: 16px 0px;
 }
 
 .section-team {
-  width: 320px;
+  width: 100%;
   margin-top: 96px;
+  background: #f4f4fd;
 }
 .team-title {
   display: block;
@@ -354,7 +358,7 @@ textarea {
   height: 40px;
   overflow: hidden;
   margin-bottom: 72px;
-  margin-top: 96px;
+
   margin-left: auto;
   margin-right: auto;
   white-space: nowrap; /* sığması için  */
@@ -366,8 +370,6 @@ textarea {
   flex-direction: column;
   gap: 72px;
   width: 320px;
-  height: 1928px;
-  margin-top: 72px;
 }
 .team-section {
   display: flex;
@@ -380,7 +382,6 @@ textarea {
   width: 264px;
   box-shadow: 0 2px 1px 0 rgba(46, 47, 66, 0.08),
     0 1px 1px 0 rgba(46, 47, 66, 0.16), 0 1px 6px 0 rgba(46, 47, 66, 0.08);
-  background: #fff;
 }
 
 .team-section .img {
@@ -433,7 +434,7 @@ textarea {
 }
 
 .team-icon-link:hover {
-  background-color: #31d0aa;
+  background-color: #404bbf;
   outline: none;
 }
 .section-portfolio {
@@ -520,15 +521,17 @@ textarea {
   letter-spacing: 0.02em;
   color: #434455;
 }
+.page-footer {
+  background-color: #2e2f42;
+  width: 100%;
+  height: auto;
+}
 .footer-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
   gap: 72px;
-  width: 320px;
-  height: 664px;
-  background-color: #2e2f42;
 }
 .footer-logo-copyright {
   display: flex;

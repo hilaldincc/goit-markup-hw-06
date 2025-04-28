@@ -1,6 +1,11 @@
 @media (min-width: 1158px) {
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+  }
+
   .container {
-    width: 1140px;
   }
   .page-header {
     height: 72px;
@@ -67,6 +72,13 @@
     justify-content: center;
     gap: 40px;
     margin-right: 27px;
+  }
+  .address .contacts {
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
+    color: #434455;
+    font-weight: 400;
   }
   .address .contacts-active {
     white-space: nowrap;
@@ -157,7 +169,7 @@
   /* ourteam */
 
   .section-team {
-    width: 1440px;
+    width: 100%;
     height: auto;
     background: #f4f4fd;
     padding: 120px 156px;
@@ -246,13 +258,15 @@
   /* footer */
 
   .page-footer {
-    background: #2e2f42;
+    background-color: #2e2f42;
+    width: 1440px;
   }
 
   .footer-container {
-    width: 1440px;
-    height: 312px;
-    padding: 100px 156px;
+    width: 1457px;
+    height: 332px;
+    padding: 100px 150px;
+    margin: 0 auto;
     display: flex;
     flex-direction: row;
     justify-content: center;
