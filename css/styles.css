@@ -60,8 +60,12 @@ input {
 textarea {
   resize: none;
 }
-
-.container {
+/* Header */
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+}
+.page-header .container {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +73,6 @@ textarea {
   margin: 0 auto;
   width: 320px;
 }
-
-/* Header */
 .mobil-page-header {
   display: flex;
   flex-direction: row;
@@ -79,6 +81,7 @@ textarea {
 }
 
 .mobil-page-header .logo {
+  display: inline;
   font-family: "Raleway", sans-serif;
   color: #2e2f42;
   font-weight: bold;
@@ -89,6 +92,7 @@ textarea {
   text-transform: uppercase;
   text-decoration: none;
   margin-right: 133px;
+  white-space: nowrap;
 }
 
 .web-logo {
@@ -210,21 +214,17 @@ textarea {
 
 /* main */
 @media (min-resolution: 2dppx) {
-  .hero-page {
-    background-image: url("../images/people-office-2x.jpg");
+  .page-main .hero-page .container {
+    background-image: url("../images/people-office-mobil-2x.jpg");
     background-size: cover;
+    background-repeat: no-repeat;
     background-position: center;
+    width: 320px;
+    height: 432px;
+    position: relative;
+    z-index: 2;
+    margin: 0 auto;
   }
-}
-
-.hero-page-button {
-  background-image: url(../images/people-office.jpg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 432px;
-  position: relative;
-  z-index: 2;
 }
 
 .hero-page .button {
@@ -250,10 +250,11 @@ textarea {
   align-items: center;
   justify-content: center;
   gap: 72px;
-  width: 100%;
-  height: 100%;
+  width: 320px;
+  height: 432px;
   background-color: rgba(46, 47, 66, 0.7);
   z-index: 1;
+  margin: 0 auto;
 }
 
 .page-title {
@@ -291,16 +292,22 @@ textarea {
   letter-spacing: 0.04em;
   color: #fff;
 }
+.button:hover,
+.button:focus {
+  background-color: #404bbf;
+}
 
-.section-features {
+/* features */
+
+.section-features .container {
   display: flex;
   align-items: center;
   justify-content: center;
   flex-direction: column;
   gap: 72px;
   width: 320px;
-
-  margin-top: 96px;
+  padding-top: 96px;
+  margin: 0 auto;
 }
 
 .features-list-ul {
@@ -341,10 +348,12 @@ textarea {
   padding: 16px 0px;
 }
 
-.section-team {
-  width: 100%;
-  margin-top: 96px;
+.section-team .container {
+  width: 360px;
+  padding-top: 96px;
   background: #f4f4fd;
+  padding-bottom: 96px;
+  margin: 0 auto;
 }
 .team-title {
   display: block;
@@ -366,10 +375,9 @@ textarea {
 .team-list {
   display: flex;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: center;
   flex-direction: column;
   gap: 72px;
-  width: 320px;
 }
 .team-section {
   display: flex;
@@ -437,9 +445,10 @@ textarea {
   background-color: #404bbf;
   outline: none;
 }
-.section-portfolio {
-  width: 320px;
 
+.section-portfolio .container {
+  margin: 0 auto;
+  width: 320px;
   margin-bottom: 96px;
 }
 .portfolio-title {
@@ -457,6 +466,7 @@ textarea {
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  gap: 72px;
 }
 .portfolio-hover-area {
   width: 288px;
@@ -521,17 +531,18 @@ textarea {
   letter-spacing: 0.02em;
   color: #434455;
 }
-.page-footer {
+.page-footer .container {
   background-color: #2e2f42;
-  width: 100%;
+  width: 360px;
+  margin: 0 auto;
   height: auto;
-}
-.footer-container {
+  padding-bottom: 96px;
+  padding-top: 96px;
+  gap: 72px;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  gap: 72px;
 }
 .footer-logo-copyright {
   display: flex;
@@ -544,6 +555,7 @@ textarea {
   margin-top: 96px;
   margin-right: 16px;
   margin-left: 16px;
+  margin-bottom: 72px;
 }
 .footer-logo {
   text-decoration: none;
@@ -668,6 +680,7 @@ textarea {
   height: 40px;
   background-color: #4d5ae5;
   height: 40px;
+  border: none;
 }
 .button-icon {
   width: 24px;
@@ -926,7 +939,7 @@ textarea {
 }
 
 /* Gönder butonu hover efekti */
-.modal-button-input:hover,
-.modal-button-input:focus {
+.button:hover,
+.button:focus {
   background-color: #404bbf;
 }

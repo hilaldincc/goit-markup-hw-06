@@ -24,7 +24,6 @@
       rel="stylesheet"
     />
     <!--Styles-->
-    <link rel="stylesheet" href="./css/reset.css" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="stylesheet" href="./css/tablet.css" />
     <link rel="stylesheet" href="./css/desktop.css" />
@@ -33,9 +32,9 @@
     <script src="./index.js" defer></script>
   </head>
   <body>
-    <div class="container">
       <header class="page-header">
-        <div class="mobil-page-header">
+        <div class="container">
+          <div class="mobil-page-header">
           <a class="logo" href="#" title="WebStudio Homepage"
             ><span class="web-logo">WEB</span
             ><span class="studio-logo">STUDIO</span></a
@@ -51,8 +50,6 @@
             </svg>
           </button>
         </div>
-
-        <div class="menu-wrapper">
           <div id="menu" class="menu">
           <!--Kapatma Butonu-->
               <button
@@ -82,12 +79,14 @@
               </nav>
 
               <address class="address">
-                <a class="contacts" href="#" title="Email us"
+                <ul class="address-list">
+                  <li><a class="contacts" href="#" title="Email us"
                   >info@devstudio.com</a
-                >
-                <a class="contacts contacts-active" href="#" title="Call us"
+                ></li>
+                <li><a class="contacts contacts-active" href="#" title="Call us"
                   >+11 (000) 111-11-11
-                </a>
+                </a></li>
+              </ul>
               </address>
             <ul class="menu-icon-list">
               <li class="menu-icon-social">
@@ -155,13 +154,14 @@
                 </a>
               </li>
             </ul>
-          </div>
+
         </div>
+      </div>
       </header>
 
       <main class="page-main">
         <section class="hero-page">
-          <div class="hero-page-button">
+          <div class="container">
             <div class="dark-layer">
               <h1 class="page-title">
                 Effective Solutions<br />
@@ -176,10 +176,11 @@
                 <span class="button-text">Order</span>
                 <span class="button-text">Service</span>
               </button>
-            </div>
           </div>
+        </div>
         </section>
         <section class="section-features">
+          <div class="container">
           <ul class="features-list-ul">
             <li class="features-list-li">
               <div class="features-icon-box">
@@ -230,8 +231,10 @@
               </p>
             </li>
           </ul>
+        </div>
         </section>
         <section class="section-team">
+          <div class="container">
           <h2 class="team-title">Our Team</h2>
           <ul class="team-list">
             <li class="team-section">
@@ -545,9 +548,11 @@
               </div>
             </li>
           </ul>
+        </div>
         </section>
 
         <section class="section-portfolio">
+          <div class="container">
           <h2 id="our-portfolio" class="portfolio-title">Our Portfolio</h2>
           <ul class="portfolio-list-ul">
             <li class="portfolio-list-li">
@@ -717,11 +722,12 @@
               </div>
             </li>
           </ul>
+        </div>
         </section>
       </main>
       <!--Footer Başlangıç-->
       <footer class="page-footer">
-        <div class="footer-container">
+        <div class="container">
           <div class="footer-copyright-social">
             <div class="footer-logo-copyright">
               <a class="footer-logo" href="#"
@@ -804,7 +810,8 @@
               title="buton-close"
               id="modal-close"
               class="modal-close-icon"
-            >
+              type="button"
+            > 
               <svg class="modal-form-icon" width="8" height="8">
                 <use href="./images/symbol-defs.svg#icon-close"></use>
               </svg>
@@ -893,7 +900,6 @@
           </div>
         </form>
       </div>
-    </div>
     <script src="./js/index.js"></script> 
   </body>
 </html>
